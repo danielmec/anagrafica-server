@@ -12,8 +12,8 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
     // Interfaccia per la gestione dei clienti
     // Estende JpaRepository per le operazioni CRUD
     //non sono necessari metodi aggiuntivi per ora, ma si possono aggiungere query personalizzate se necessario
-    
-    // JPA fornisce molti metodi di ricerca basati su convenzioni
+
+    // JPA(Jakarta Persistence API) fornisce molti metodi di ricerca basati su convenzioni
     // findByEmail, findByNome, etc.
     Optional<Cliente> findByEmail(String email);
 
